@@ -47,9 +47,9 @@
     path: '',
     motion: {"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}},
     translation: {
-      copy_button: 'Copy',
-      copy_success: 'Copied',
-      copy_failure: 'Copy failed'
+      copy_button: 'Kopieren',
+      copy_success: 'Kopiert',
+      copy_failure: 'Kopieren fehlgeschlagen'
     },
     sidebarPadding: 40
   };
@@ -137,7 +137,7 @@
   </div>
 
   <div class="site-nav-toggle">
-    <button aria-label="Toggle navigation bar">
+    <button aria-label="Navigationsleiste an/ausschalten">
       <span class="btn-bar"></span>
       <span class="btn-bar"></span>
       <span class="btn-bar"></span>
@@ -157,7 +157,7 @@
       
     
 
-    <a href="/" rel="section"><i class="menu-item-icon fa fa-fw fa-home"></i> <br>Home</a>
+    <a href="/" rel="section"><i class="menu-item-icon fa fa-fw fa-home"></i> <br>Startseite</a>
 
   </li>
       
@@ -168,7 +168,7 @@
       
     
 
-    <a href="/archives/" rel="section"><i class="menu-item-icon fa fa-fw fa-archive"></i> <br>Archives</a>
+    <a href="/archives/" rel="section"><i class="menu-item-icon fa fa-fw fa-archive"></i> <br>Archiv</a>
 
   </li>
   </ul>
@@ -220,13 +220,13 @@
               <span class="post-meta-item-icon">
                 <i class="fa fa-calendar-o"></i>
               </span>
-              <span class="post-meta-item-text">Posted on</span>
+              <span class="post-meta-item-text">Veröffentlicht am</span>
 
               
                 
               
 
-              <time title="Created: 2019-09-09 15:23:45 / Modified: 15:28:05" itemprop="dateCreated datePublished" datetime="2019-09-09T15:23:45+08:00">2019-09-09</time>
+              <time title="Erstellt: 2019-09-09 15:23:45 / Geändert am: 17:16:40" itemprop="dateCreated datePublished" datetime="2019-09-09T15:23:45+08:00">2019-09-09</time>
             </span>
           
             
@@ -246,8 +246,8 @@
 
       
           <p>filename = ‘file.txt’<br>with open(filename,’w’) as file_object<br>此处为写入文件操作</p>
-<h2 id="不同实参操作"><a href="#不同实参操作" class="headerlink" title="不同实参操作"></a>不同实参操作</h2><p>打开文件时，可以选择不同的操作模式，比如： 读取模式’r’</p>
-
+<h2 id="不同实参操作"><a href="#不同实参操作" class="headerlink" title="不同实参操作"></a>不同实参操作</h2><p>打开文件时，可以选择不同的操作模式，比如： 读取模式’r’等</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br></pre></td><td class="code"><pre><span class="line"></span><br><span class="line"><span class="string">""</span><span class="string">"10.2.1空白文件的写入操作"</span><span class="string">""</span></span><br><span class="line"></span><br><span class="line">filename = <span class="string">'programming.txt'</span></span><br><span class="line"></span><br><span class="line">with open(filename,<span class="string">'w'</span>) as file_object:</span><br><span class="line">	<span class="comment">#以写的方式打开文件</span></span><br><span class="line">	file_object.write(<span class="string">"I love it"</span>)</span><br><span class="line"></span><br><span class="line"><span class="comment">#注意点：python只能将字符串写入文件，若要将数值写入，必须用str()将其转换成字符串格式</span></span><br><span class="line"></span><br><span class="line"><span class="string">""</span><span class="string">"10.2.2写入多行"</span><span class="string">""</span></span><br><span class="line">filename = <span class="string">'programming.txt'</span></span><br><span class="line"></span><br><span class="line">with open(filename,<span class="string">'w'</span>) as file_object:</span><br><span class="line">	file_object.write(<span class="string">"this is line one.\n"</span>)</span><br><span class="line">	file_object.write(<span class="string">"this is line two"</span>)</span><br><span class="line">	<span class="comment">#使用\n在行末写入后进行换行，此外还可以用空格、制表符、空行来设置格式</span></span><br><span class="line"></span><br><span class="line"></span><br><span class="line"><span class="string">""</span><span class="string">"10.2.3附加到文件"</span><span class="string">""</span></span><br><span class="line">filename = <span class="string">'programming.txt'</span></span><br><span class="line"></span><br><span class="line">with open(filename,<span class="string">'a'</span>) as file_object:</span><br><span class="line">	<span class="comment">#参数 'a' 将写入的文件添加到文件末尾</span></span><br><span class="line">	file_object.write(<span class="string">"I love it"</span>)</span><br><span class="line"></span><br><span class="line"></span><br><span class="line"><span class="string">""</span><span class="string">"</span></span><br><span class="line"><span class="string">10.3 异常处理 </span></span><br><span class="line"><span class="string">   </span></span><br><span class="line"><span class="string">异常是使用try-except代码块进行处理的</span></span><br><span class="line"><span class="string"></span></span><br><span class="line"><span class="string"></span></span><br><span class="line"><span class="string">try:</span></span><br><span class="line"><span class="string">	print(5/0)</span></span><br><span class="line"><span class="string">except ZeroDivisionError:</span></span><br><span class="line"><span class="string">	print("</span>You can<span class="string">'t divide by zero")</span></span><br><span class="line"><span class="string">#若try中的代码运行没有出错，则将跳过except模块中的代码，否则会根据错误类型运行对应except模块代码</span></span><br><span class="line"><span class="string">"""</span></span><br><span class="line"><span class="string"></span></span><br><span class="line"><span class="string">#ex 10-6 检查进行加法运算的数是否为int类型：</span></span><br><span class="line"><span class="string">while(1):</span></span><br><span class="line"><span class="string">	number_1 = input("please input the first number:")</span></span><br><span class="line"><span class="string">	number_2 = input("please input the second number:")</span></span><br><span class="line"><span class="string">	try:</span></span><br><span class="line"><span class="string">		add = int(number_1) + int(number_2)</span></span><br><span class="line"><span class="string">	except ValueError:</span></span><br><span class="line"><span class="string">		print("there should be two numbers!")</span></span><br><span class="line"><span class="string">	else:</span></span><br><span class="line"><span class="string">		</span></span><br><span class="line"><span class="string">		print(str(number_1) +" + "+str(number_2)+ " = "+str(add))</span></span><br></pre></td></tr></table></figure>
         
       
     </div>
@@ -294,13 +294,13 @@
               <span class="post-meta-item-icon">
                 <i class="fa fa-calendar-o"></i>
               </span>
-              <span class="post-meta-item-text">Posted on</span>
+              <span class="post-meta-item-text">Veröffentlicht am</span>
 
               
                 
               
 
-              <time title="Created: 2019-09-03 22:12:50" itemprop="dateCreated datePublished" datetime="2019-09-03T22:12:50+08:00">2019-09-03</time>
+              <time title="Erstellt: 2019-09-03 22:12:50" itemprop="dateCreated datePublished" datetime="2019-09-03T22:12:50+08:00">2019-09-03</time>
             </span>
           
             
@@ -310,8 +310,8 @@
                 <span class="post-meta-item-icon">
                   <i class="fa fa-calendar-check-o"></i>
                 </span>
-                <span class="post-meta-item-text">Edited on</span>
-                <time title="Modified: 2019-09-08 11:48:41" itemprop="dateModified" datetime="2019-09-08T11:48:41+08:00">2019-09-08</time>
+                <span class="post-meta-item-text">Bearbeitet am</span>
+                <time title="Geändert am: 2019-09-09 16:26:19" itemprop="dateModified" datetime="2019-09-09T16:26:19+08:00">2019-09-09</time>
               </span>
             
           
@@ -383,10 +383,10 @@
 
       <ul class="sidebar-nav motion-element">
         <li class="sidebar-nav-toc">
-          Table of Contents
+          Inhaltsverzeichnis
         </li>
         <li class="sidebar-nav-overview">
-          Overview
+          Übersicht
         </li>
       </ul>
 
@@ -406,7 +406,7 @@
           <a href="/archives/">
         
           <span class="site-state-item-count">2</span>
-          <span class="site-state-item-name">posts</span>
+          <span class="site-state-item-name">Artikel</span>
         </a>
       </div>
     
@@ -432,9 +432,9 @@
   </span>
   <span class="author" itemprop="copyrightHolder">Geraint</span>
 </div>
-  <div class="powered-by">Powered by <a href="https://hexo.io" class="theme-link" rel="noopener" target="_blank">Hexo</a> v3.9.0</div>
+  <div class="powered-by">Erstellt mit  <a href="https://hexo.io" class="theme-link" rel="noopener" target="_blank">Hexo</a> v3.9.0</div>
   <span class="post-meta-divider">|</span>
-  <div class="theme-info">Theme – <a href="https://theme-next.org" class="theme-link" rel="noopener" target="_blank">NexT.Muse</a> v7.4.0</div>
+  <div class="theme-info">Design – <a href="https://theme-next.org" class="theme-link" rel="noopener" target="_blank">NexT.Muse</a> v7.4.0</div>
 
         
 
